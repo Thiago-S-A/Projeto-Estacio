@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Formulário de Contato Simples</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formulário de Contato</h1>
+        <p>Preencha os campos abaixo para entrar em contato conosco.</p>
+    </header>
+
+    <form>
+
+        <label id="nomeTittle" for="nome">Nome Completo:</label><br>
+        <input class="caixa" type="text" id="nome" name="nome" placeholder="Seu nome aqui"><br><br>
+        
+
+        <label for="email">Email:</label><br>
+        <input class="caixa" type="email" id="email" name="email" placeholder="seu.email@exemplo.com"><br><br>
+
+
+        <label for="senha">Senha:</label><br>
+        <input class="caixa" type="password" id="senha" name="senha" placeholder="********"><br><br>
+
+
+        <label for="idade">Sua Idade:</label><br>
+        <input type="number" id="idade" name="idade" min="18" max="99"><br><br>
+
+
+        <p>Qual seu gênero favorito de filme?</p>
+        <input class="radioo" type="radio" id="acao" name="genero_filme" value="acao">
+        <label for="acao">Ação</label><br>
+        <input class="radioo" type="radio" id="comedia" name="genero_filme" value="comedia">
+        <label for="comedia">Comédia</label><br>
+        <input class="radioo" type="radio" id="drama" name="genero_filme" value="drama">
+        <label for="drama">Drama</label><br><br>
+
+
+        <p>Quais linguagens de programação você conhece?</p>
+        <input class="checkbox1" type="checkbox" id="python" name="linguagem" value="python">
+        <label for="python">Python</label><br>
+        <input class="checkbox1" type="checkbox" id="java" name="linguagem" value="java">
+        <label for="java">Java</label><br>
+        <input class="checkbox1" type="checkbox" id="html_css" name="linguagem" value="html_css">
+        <label for="html_css">HTML/CSS</label><br><br>
+
+
+        <label for="mensagem">Sua Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Digite sua mensagem aqui..."></textarea><br><br>
+        <div id="botoes">
+            <button class="button1" type="submit">Enviar Formulário</button>
+            <button class="button2" type="reset">Limpar Campos</button>
+        </div>
+    </form>
+
+    <footer id="footer">
+        <p>Obrigado por seu contato!</p>
+        <a href="index.html">Página Inicial</a>
+    </footer>
+
+    <script src="forms.js"></script>
+
+</body>
+</html>
